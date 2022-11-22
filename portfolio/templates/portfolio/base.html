@@ -13,12 +13,22 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(152, 125, 87)">
         <div class="container-fluid">
           <a class="navbar-brand ms-5" href="{% url 'home' %}">Lucas Luro Alves</a>
+          <div class="collapse navbar-collapse justify-content-center">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                 <a class="nav-link" href="https://github.com/LucasLuro"><img src="{% static 'portfolio/github logo.png' %}" height="30px" width="30px"></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="https://www.linkedin.com/in/lucas-luro/"><img src="{% static 'portfolio/linkedin logo.png' %}" height="30px" width="30px"></a>
+                </li>
+             </ul>
+          </div>
           <div class="d-flex" id="navbarSupportedContent">
             <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-                <li class="nav-item justify-content-end">
+                <li class="nav-item">
                   <a class="nav-link" href="{% url 'resume' %}">Resume</a>
                 </li>
-                <li class="nav-item justify-content-end">
+                <li class="nav-item">
                   <a class="nav-link" href="{% url 'showroom:showroom' %}">Showroom</a>
                 </li>
             </ul>
