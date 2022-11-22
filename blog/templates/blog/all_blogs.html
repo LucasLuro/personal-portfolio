@@ -1,0 +1,16 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+    <h1>Here is where all blogs will be displayed</h1>
+<div class="allblogstext">
+    <h4 class="blogcount" style="color: white">Lucas has written {{ blogs.count }} blog{{ blogs.count|pluralize }}:</h4><br><br>
+
+    {% for item in blogs %}
+    <a href="{% url 'blog:detail' item.id%}">
+    <h2 style="color: white">{{item.title}}</h2>
+    </a>
+    <p class="blogdesc" style="color: white">{{item.description}}</p>
+    <p style="color: white">{{item.date}}</p><br>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h1>Logged in as {{user.username}}</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h2 id="authhomeh2">
+                Hey there! It looks like you've got to know my Authentication System alredy. 
+                If you do thank you for stopping by again. If you don't maybe someone else did in this PC.
+                No matter which is the case you can use the logout button down below to restart the process.
+                Remember, once a week all created Users will be deleted to avoid problems with storage limits.
+            </h2>
+        </div>
+    </div>
+
+<form action="{% url 'showroom:logoutuser' %}" method="POST">
+    {% csrf_token %}
+    <button id="lougoutbtnauthhome" type="submit" class="btn btn-lg btn-outline-light">Logout</button>
+</form>
+
+{% else %}
+<h1>Welcome to my Authentication System!</h1>
+<div class="row justify-content-center">
+    <h2 id="authhomeh2" class="col-lg-6">
+        Hello there, it looks like it's your first time around here.
+        If that's the case you can use the Sign Up button down below to register you credentials,
+        if not you can use the login button to access your profile. PS: all profiles are deleted
+        once a week to avoid storage limit problems. Thank you for you time and attention!
+    </h2>
+</div>
+<div id="authhomenoauthbtns">
+    <a id ="authhomenoauthbtn" class="btn btn-lg btn-outline-light" href="{% url 'showroom:loginuser' %}">Log In</a>
+    <a id="authhomenoauthbtn" class="btn btn-lg btn-outline-light" href="{% url 'showroom:signupuser' %}">Sign Up</a>
+</div>
+{% endif %}
+
+{% endblock %}

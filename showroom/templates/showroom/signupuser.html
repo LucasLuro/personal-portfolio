@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<h1>Sign Up</h1>
+<div class="row justify-content-center">
+    <h2 id="signupgreetings" class="col-lg-6">
+        Greetings, Adventurer, and thank you so much for starting your Registration process!
+        Please follow the instructions below to complete it.
+    </h2>
+</div>
+<h2 id="signuperror">{{ error }}</h2>
+<div id="signupform" style="color: rgb(255, 255, 255)">
+    <form method="POST">{{ form.as_p }}
+    {% csrf_token %}
+    <button id="registerbtn" class="btn btn-lg btn-outline-light" type="submit">Register</button>
+    </form>
+</div>
+{% endblock %}

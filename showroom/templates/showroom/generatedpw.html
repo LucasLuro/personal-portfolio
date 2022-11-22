@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<div class="container text-center" style="color: rgb(255, 255, 255)">
+    <h1>Your Password is:</h1>
+    <br>
+    <br>
+    <br>
+    <div class="row justify-content-center">
+        <div id='generatedpwbox' class="col-sm-4">
+        <h2 class="alert alert-success">{{password}}</h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <a href = "{% url 'showroom:pg'%}" class="btn btn-outline-light">Back to the Generator</a>
+    <a href = "{% url 'showroom:showroom'%}" class="btn btn-outline-light">Back to the Showroom</a>
+</div>
+
+{% endblock %}

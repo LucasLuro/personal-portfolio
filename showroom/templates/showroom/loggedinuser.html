@@ -1,0 +1,19 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<h1> Thanks for Login in!</h1>
+<h2 id="loggedinh2">Logged in as {{user.username}}</h2>
+<div class="row justify-content-center">
+    <h2 id="loggedinty" class="col-lg-6"> 
+        I appreciate your time and attention towards getting to know some of my web developing skills!
+        All the info you've used to register and login will be deleted once a week so I avoid overloading
+        this free host's storage. At last, you can logout using the button below.
+    </h2>
+</div>
+<div id="logoutbtnloggedin" >
+    <form action="{% url 'showroom:logoutuser' %}" method="POST">
+        {% csrf_token %}
+        <button class="btn btn-lg btn-outline-light" type="submit">Logout</button>
+    </form>
+</div>
+{% endblock %}

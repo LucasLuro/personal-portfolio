@@ -1,0 +1,67 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+
+    <div class="welcome">
+        <h1>Welcome this is my portfolio</h1>
+    </div>
+    <section id="presentation">
+    <div class="row">
+        <div class="selfie col-lg-5 order-lg-last">
+            <img id="selfie" src="{% static 'portfolio/Professional Pic.jpeg' %}" height="400" width="400">
+        </div>
+        <div class="description col-lg-7 ">
+            <h2>Hi, my name is Lucas Luro, I'm a 27 years old brazilian Web Developer who's specializing in 
+                BackEnd development using the Python programming language and the Django Framework.
+                Through my professional career I've worked in many different enterprises, those went from
+                working as an intern in the DA's office, while graduating as a law baccalaureate in São Paulo,
+                through sales in a radio, general manager in a professional eSports organisation, 
+                to managing crypto investments(mainly games, but also trades), deeply descripted in my <a class="btn btn-lg btn-outline-light" href="{% url 'resume' %}">Resume</a>.
+            </h2>
+        </div>
+    </section>
+    <section id="skills-and-hobbies">
+    <div class="row justify-content-center">
+        <div class="skills-box col-lg-3">
+            <h2>
+                Skills:<br><br>
+            </h2>
+            <h3>
+                English:<br> ⭐⭐⭐⭐⭐<br><br>
+                Portuguese:<br> ⭐⭐⭐⭐⭐<br><br>
+                Python:<br> ⭐⭐⭐<br><br>
+            </h3>
+        </div>
+        <div class="hobbies-box col-lg-3">
+            <h2>        
+                Hobbies:<br><br>
+            </h2>
+            <h3>
+                Music:<br> 🎸🎤<br><br>
+                Gaming:<br> 💻<br><br>
+                Traveling:<br> 🏛️🏖️
+            </h3>
+        </div>
+    </div>
+    </section>
+    <div>
+        <h2 class="mycerts">My Certificates</h2>>
+    </div>
+    <section id="certifications">
+        <div class="row justify-content-center">
+            {% for item in certifications %}
+            <div class="floaters col-lg-4">
+                <h3 class="cert-title">{{item.title}}</h3>
+                <h5 class="cert-description">{{item.description}}</h5>
+                <img class="cert-img" src="{{item.image.url}}" height=330 width=460>
+                {% if item.url %}
+                <br><a href="{{project.url}}">Link</a>
+                {% else %}
+                <br>
+                {% endif %}
+            </div>           
+            {% endfor %}
+        </div>    
+    </section>    
+
+{% endblock %}

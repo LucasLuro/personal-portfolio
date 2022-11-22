@@ -1,0 +1,276 @@
+/*******************TAG SELECTORS*******************/
+body {
+    background-color: rgb(152, 125, 87);
+    margin: 5% 0%;
+    width: 99%;
+}
+
+h1 {
+    text-align:center;
+    color:rgb(255, 255, 255);
+    padding: 2cm 0cm 0cm 0cm;
+}
+
+/*----------------------HOME PAGE----------------------*/
+
+/*******************SELECTORS*******************/
+
+#presentation {
+    padding: 5% 8%;
+}
+.description {
+    text-align:justify;
+    color:rgb(252, 252, 252);
+    padding: 5% 0% 5% 5%;
+}
+
+.selfie {
+    padding: 10% 0%;
+}
+
+#selfie {
+    float: top;
+    display: block;
+    margin: auto;
+}
+
+#skills-and-hobbies {
+    color: white;
+}
+
+.skills-box {
+    text-align: center;
+    height: 400px;
+}
+
+.hobbies-box {
+    text-align: center;
+    height: 400px;
+}
+
+.mycerts {
+    text-align: center;
+    color: white;
+    padding: 3% 10%;
+}
+
+#certifications {
+    color: white;
+    align-content: center;
+}
+
+.floaters {
+    margin: 0% 2%;
+    height: 700px;
+    width: 500px;
+}
+
+.cert-title {
+    height: 15%;
+    width: 100%;
+}
+
+.cert-description {
+    height: 25%;
+    width: 100%;
+}
+
+/*--------------------SHOWROOM-------------------*/
+
+/******************SELECTORS****************/
+
+.showroomh2title {
+    color: white;
+    text-align: center;
+    padding: 6% 10% 3%;
+}
+
+.showroomh2 {
+    text-align: justify;
+    padding: 20% 10%;
+    color: white;
+}
+
+.showroomimgs {
+    display: block;
+    margin: auto;
+    padding: 0% 10%;
+}
+
+#itemsshowroomhome {
+    height: 10%;
+    width: 95%;
+}
+
+#showroombtn{
+    width: 500px;
+    padding: 5% 20%;
+    text-align: center;
+}
+
+
+/*----------------AUTHENTICATION SYSTEM(HOME)--------------*/
+
+/****************SELECTORS*****************/
+#lougoutbtnauthhome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#authhomeh2 {
+    text-align: justify;
+    padding:5%;
+    color: white;
+}
+
+#authhomenoauthbtns {
+    display: flex;
+    justify-content: center;
+}
+
+#authhomenoauthbtn {
+    margin-right: 1cm;
+}
+
+/*----------------AUTHENTICATION SYSTEM(LOGIN)--------------*/
+
+/****************SELECTORS*****************/
+
+#logingreetings {
+    text-align: center;
+    color: white;
+    padding: 5%;
+}
+
+#loginerror {
+    text-align: center;
+    color: white;
+    padding-bottom: 1cm;
+}
+
+#loginform {
+    text-align: center;
+}
+
+
+/*----------------AUTHENTICATION SYSTEM(SIGN UP)--------------*/
+
+/****************SELECTORS*****************/
+
+#signupgreetings {
+    text-align: justify;
+    color: white;
+    padding: 5% 5%;
+}
+
+#signuperror {
+    text-align: center;
+    color: white;
+}
+
+#signupform {
+    text-align: center;
+}
+
+/*----------------AUTHENTICATION SYSTEM(LOGGED IN)--------------*/
+
+/****************SELECTORS*****************/
+
+#loggedinh2 {
+    text-align: center;
+    color: white;
+    padding: 5% 0% 5% 0%;
+}
+
+#loggedinty {
+    text-align: justify;
+    color: white;
+    padding: 0% 5%;
+}
+
+#logoutbtnloggedin {
+    display: flex;
+    justify-content: center;
+}
+
+/*----------------BLOGS(BLOG DETAILS)--------------*/
+
+/****************SELECTORS*****************/
+
+
+.blogcount {
+    padding: 10% 0% 0% 0%;
+}
+
+.allblogstext {
+    padding: 0% 5%;
+}
+
+#backtoblogs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#me {
+    color: white;
+    text-align: center;
+}
+
+.blogdesc{
+    text-align: justify;
+}
+
+.detailedblog{
+    padding: 0% 5%;
+}
+
+/*----------------RESUME--------------*/
+
+/****************SELECTORS*****************/
+
+#me {
+    color: white;
+    text-align: center;
+}
+
+#resumeh2 {
+    text-align: center;
+    color: white;
+}
+
+#resumeh4 {
+    text-align: justify;
+    color: white;
+    padding-left: 15cm;
+    padding-right: 15cm;
+}
+
+#resumep {
+    text-align: justify;
+    color: white;
+    padding-left: 15cm;
+    padding-right: 15cm;
+}
+
+#sch-lan {
+    color: white;
+}
+
+.schooling {
+    text-align: center;
+}
+
+.languages {
+    text-align: center;
+}
+
+#profexp {
+    color: white;
+}
+
+.emprego {
+    text-align: justify;
+    padding: 3% 5%;
+}

@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<h1>Login</h1>
+<h2 id="logingreetings">Hey, it seems you're registered alredy. <br>Feel free to log in!</h2>
+
+
+<h2 id="loginerror">{{ error }}</h2>
+
+<div id="loginform" style="color: rgb(255, 255, 255)">
+        <form method="POST">{{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-lg btn-outline-light">Login</button>
+        </form>
+</div>
+
+{% endblock %}

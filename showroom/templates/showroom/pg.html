@@ -1,0 +1,40 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+<div class="container text-center" style="color: rgb(255, 255, 255)">
+    <h1>Welcome to The Password Generator</h1>
+    <br>
+    <br>
+    <br>
+    <form action="{% url 'showroom:generatedpw' %}">
+        How many characters would you like your password to have? <select name = 'length'>
+            <option value = '6'>6</option>
+            <option value = '7'>7</option>
+            <option value = '8'>8</option>
+            <option value = '9'>9</option>
+            <option value = '10'>10</option>
+            <option value = '11'>11</option>
+            <option value = '12' selected="selected">12</option>
+            <option value = '13'>13</option>
+            <option value = '14'>14</option>
+        </select>
+    <br>
+    <br>
+    <br>
+        Would you like your password to have Uppercase Letters? <input type = 'checkbox' name = 'uppercase'>
+    <br>   
+    <br>
+    <br>
+        Would you like your password to have Numbers? <input type = 'checkbox' name = 'numbers'>
+    <br>   
+    <br>
+    <br>
+        Would you like your password to have Special Characters? <input type = 'checkbox' name = 'special'>
+    <br>   
+    <br>
+    <br>
+        <input type="submit" value="Generate Password" class="btn btn-outline-light">
+    </form>
+</div>
+
+{% endblock %}

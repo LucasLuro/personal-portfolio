@@ -1,0 +1,48 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+
+    <h1> Welcome to My Showroom!</h1>
+    <h2 class="showroomh2title"> This is a section of my online portfolio to show you a couple things I can do.</h2>
+
+    <section id="itemsshowroomhome">
+    <div class="row">
+        <div class="gotopwgenimg col-lg-4">
+            <div id="showroombtn"><a  class="btn btn-outline-light btn-lg" href="{% url 'showroom:pg' %}">Password Generator</a></div>
+            <img class="showroomimgs"
+            src="https://media2.giphy.com/media/9r75gWMg7L0X1ArlsM/giphy.gif?cid=ecf05e47dse52j072dc03sv0t4a97xdrjky3ifz0905woom4&amp;rid=giphy.gif&amp;ct=g" 
+            alt="chris redd password GIF by Saturday Night Live" height="300" width="500">
+        </div>
+        <div class="gotopwgendesc col-lg-8">
+            <h2 class="showroomh2"> This is an app that generates passwords randomically combining characters,
+                those characters can be alphabet letters (lower and uppercase), numbers and special characters or combinations of those.
+            </h2>
+        </div>  
+    </div>
+    </section>
+    <section id="itemsshowroomhome">
+    <div class="row">
+        <div class="gotoauthsysimg col-lg-4 order-lg-last">
+            <div id="showroombtn"><a class="btn btn-outline-light btn-lg" href="{% url 'showroom:authhome' %}">Authentication System</a></div>
+            <img class="showroomimgs" src="https://media2.giphy.com/media/1oDsJobSjjdHxoLxZv/giphy.gif?cid=790b76112eb0bca71e0c0790bd29b4db45afdb6501023901&amp;rid=giphy.gif&amp;ct=g" 
+            alt="Season 1 Starz GIF by Now Apocalypse" style="width: 500px; height: 300px;">
+        </div>
+        <div class="gotoauthsysdesc col-lg-8">    
+            <h2 class="showroomh2"> This is a group of forms that allow the user to register an account, log into it and update it's info.</h2>
+        </div>
+    </div>
+    </section>
+    <section id="itemsshowroomhome">
+    <div class="row">
+        <div class="gotoblogsimg col-lg-4">
+            <div id="showroombtn"><a class="btn btn-outline-light btn-lg" href="{% url 'blog:blogs' %}">Blogs</a></div>
+            <img class="showroomimgs" src="https://media1.giphy.com/media/aYVmoo4EestOJQoMDg/giphy.gif?cid=ecf05e47e2t7ph235ivfm4akmplurvfhcj9tquvowvms8lgw&amp;rid=giphy.gif&amp;ct=g" 
+            alt="News Thumbs Up GIF by Storymaker" style="width: 500px; height: 300px">
+        </div>
+        <div class="gotoblogsdesc col-lg-8">    
+            <h2 class="showroomh2"> This is a blog... Pretty self explanatory, not much to talk about it.</h2>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}
